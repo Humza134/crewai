@@ -1,0 +1,22 @@
+[project]
+name = "prompt-chainig-pr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Humza134", email = "mhumza13420@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.100.1",
+    "litellm>=1.59.8",
+]
+
+[project.scripts]
+prompt-chainig-pr = "prompt_chainig_pr:main"
+simpleflow = "prompt_chainig_pr.main:kickoff"
+chainig = "prompt_chainig_pr.generate_fun_fact:kickoff"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
