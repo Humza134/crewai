@@ -1,0 +1,27 @@
+[project]
+name = "routing-pr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Humza134", email = "mhumza13420@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.100.1",
+    "litellm>=1.59.8",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+routing-pr = "routing_pr:main"
+routing-pr = "routing_pr.main:kickoff"
+routing-pr = "routing_pr.main:plot"
+routing-pr = "routing_pr.main1:kickoff"
+routing-pr = "routing_pr.main1:plot"
+routing-pr = "routing_pr.main2:kickoff"
+routing-pr = "routing_pr.main2:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
